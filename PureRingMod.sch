@@ -6158,10 +6158,10 @@ NS Package M08A</description>
 <part name="R10" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="27K"/>
 <part name="R11" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="316K"/>
 <part name="C5" library="SparkFun-Capacitors" deviceset="0.1UF" device="-KIT-EZ-50V-20%" value="4u7f"/>
-<part name="R12" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="301K"/>
+<part name="R12" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="330K"/>
 <part name="R13" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="10K"/>
 <part name="R14" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="100"/>
-<part name="TR1" library="INSTRUO" deviceset="TRIMMER_TH3" device="" value="25K"/>
+<part name="TR1" library="INSTRUO" deviceset="TRIMMER_TH3" device="" value="10K"/>
 <part name="MICVOL" library="GMSN" deviceset="9MMPOT" device=""/>
 </parts>
 <sheets>
@@ -6283,6 +6283,10 @@ NS Package M08A</description>
 <wire x1="152.4" y1="60.96" x2="149.86" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="60.96" x2="149.86" y2="58.42" width="0.1524" layer="91"/>
 <label x="149.86" y="55.88" size="1.778" layer="95"/>
+<pinref part="OUTPUT" gate="G$1" pin="NORM"/>
+<wire x1="152.4" y1="63.5" x2="149.86" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="63.5" x2="149.86" y2="60.96" width="0.1524" layer="91"/>
+<junction x="149.86" y="60.96"/>
 </segment>
 <segment>
 <pinref part="CARRIER" gate="G$1" pin="GND"/>
