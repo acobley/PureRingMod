@@ -6145,10 +6145,10 @@ NS Package M08A</description>
 <part name="MODAC" library="INSTRUO" deviceset="TOGGLE_ON_OFF_ON" device="" value=""/>
 <part name="VRCARIER" library="GMSN" deviceset="9MMPOT" device=""/>
 <part name="VRMOD" library="GMSN" deviceset="9MMPOT" device=""/>
-<part name="C2" library="SparkFun-Capacitors" deviceset="0.1UF" device="-KIT-EZ-50V-20%" value="0.1uF"/>
-<part name="C3" library="SparkFun-Capacitors" deviceset="0.1UF" device="-KIT-EZ-50V-20%" value="0.1uF"/>
-<part name="R6" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="6k2"/>
-<part name="R7" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="6k2"/>
+<part name="C2" library="SparkFun-Capacitors" deviceset="0.1UF" device="-KIT-EZ-50V-20%" value="1uF"/>
+<part name="C3" library="SparkFun-Capacitors" deviceset="0.1UF" device="-KIT-EZ-50V-20%" value="1uF"/>
+<part name="R6" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="1M"/>
+<part name="R7" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="1M"/>
 <part name="X1" library="con-neutrik_ag" library_urn="urn:adsk.eagle:library:166" deviceset="NC3" device="FD-V" package3d_urn="urn:adsk.eagle:package:8819/1">
 <attribute name="RS-PART" value="448-244"/>
 </part>

@@ -822,16 +822,16 @@ design rules under a new name.</description>
 <element name="MODAC" library="INSTRUO" package="TOGGLE_ON_OFF_ON" value="" x="54.61" y="45.72" rot="MR0"/>
 <element name="VRCARIER" library="GMSN" package="POT" value="9MMPOT" x="34.29" y="59.69" rot="MR270"/>
 <element name="VRMOD" library="GMSN" package="POT" value="9MMPOT" x="34.29" y="45.72" rot="MR270"/>
-<element name="C2" library="SparkFun-Capacitors" package="CAP-PTH-SMALL-KIT" value="0.1uF" x="44.45" y="52.07" rot="R180">
+<element name="C2" library="SparkFun-Capacitors" package="CAP-PTH-SMALL-KIT" value="1uF" x="44.45" y="52.07" rot="R180">
 <attribute name="PROD_ID" value="CAP-08370" x="44.45" y="52.07" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C3" library="SparkFun-Capacitors" package="CAP-PTH-SMALL-KIT" value="0.1uF" x="44.45" y="35.56">
+<element name="C3" library="SparkFun-Capacitors" package="CAP-PTH-SMALL-KIT" value="1uF" x="44.45" y="35.56">
 <attribute name="PROD_ID" value="CAP-08370" x="44.45" y="35.56" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R6" library="SparkFun-Resistors" package="AXIAL-0.3" value="6k2" x="73.66" y="3.81">
+<element name="R6" library="SparkFun-Resistors" package="AXIAL-0.3" value="1M" x="73.66" y="3.81">
 <attribute name="PROD_ID" value="RES-8371" x="73.66" y="3.81" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R7" library="SparkFun-Resistors" package="AXIAL-0.3" value="6k2" x="73.66" y="8.89">
+<element name="R7" library="SparkFun-Resistors" package="AXIAL-0.3" value="1M" x="73.66" y="8.89">
 <attribute name="PROD_ID" value="RES-8371" x="73.66" y="8.89" size="1.778" layer="27" display="off"/>
 </element>
 <element name="X1" library="con-neutrik_ag" library_urn="urn:adsk.eagle:library:166" package="NC3FD-V" package3d_urn="urn:adsk.eagle:package:8819/1" value="NC3FD-V" x="17.78" y="25.4" rot="MR90">
