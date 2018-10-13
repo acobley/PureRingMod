@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.3">
+<eagle version="9.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -6135,16 +6135,16 @@ NS Package M08A</description>
 <part name="R2" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="38K3"/>
 <part name="C4" library="SparkFun-Capacitors" deviceset="10UF-POLAR" device="-RADIAL-2.5MM-25V-20%" value="10uF"/>
 <part name="C1" library="SparkFun-Capacitors" deviceset="10UF-POLAR" device="-RADIAL-2.5MM-25V-20%" value="10uF"/>
-<part name="R3" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="6k2"/>
-<part name="R4" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="6k2"/>
+<part name="R3" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="4k7"/>
+<part name="R4" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="4k7"/>
 <part name="R5" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="1K"/>
 <part name="OUTPUT" library="INSTRUO" deviceset="S_JACK" device="" value=""/>
 <part name="CARRIER" library="INSTRUO" deviceset="S_JACK" device="" value=""/>
 <part name="MODULATOR" library="INSTRUO" deviceset="S_JACK" device="" value=""/>
 <part name="CARRIERAC" library="INSTRUO" deviceset="TOGGLE_ON_OFF_ON" device="" value=""/>
 <part name="MODAC" library="INSTRUO" deviceset="TOGGLE_ON_OFF_ON" device="" value=""/>
-<part name="VRCARIER" library="GMSN" deviceset="9MMPOT" device=""/>
-<part name="VRMOD" library="GMSN" deviceset="9MMPOT" device=""/>
+<part name="VOLCARIER" library="GMSN" deviceset="9MMPOT" device=""/>
+<part name="VOLMOD" library="GMSN" deviceset="9MMPOT" device=""/>
 <part name="C2" library="SparkFun-Capacitors" deviceset="0.1UF" device="-KIT-EZ-50V-20%" value="1uF"/>
 <part name="C3" library="SparkFun-Capacitors" deviceset="0.1UF" device="-KIT-EZ-50V-20%" value="1uF"/>
 <part name="R6" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="1M"/>
@@ -6162,7 +6162,7 @@ NS Package M08A</description>
 <part name="R13" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="10K"/>
 <part name="R14" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="100"/>
 <part name="TR1" library="INSTRUO" deviceset="TRIMMER_TH3" device="" value="10K"/>
-<part name="MICVOL" library="GMSN" deviceset="9MMPOT" device=""/>
+<part name="MICMIX" library="GMSN" deviceset="9MMPOT" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6170,44 +6170,145 @@ NS Package M08A</description>
 <plain>
 </plain>
 <instances>
-<instance part="MP1" gate="G$1" x="60.96" y="48.26"/>
-<instance part="IC1" gate="A" x="15.24" y="68.58"/>
-<instance part="IC1" gate="B" x="17.78" y="40.64"/>
-<instance part="IC1" gate="C" x="66.04" y="78.74"/>
-<instance part="IC1" gate="D" x="114.3" y="63.5"/>
+<instance part="MP1" gate="G$1" x="60.96" y="48.26">
+<attribute name="NAME" x="55.88" y="59.182" size="1.778" layer="95"/>
+<attribute name="VALUE" x="55.88" y="35.56" size="1.778" layer="96"/>
+</instance>
+<instance part="IC1" gate="A" x="15.24" y="68.58">
+<attribute name="NAME" x="17.78" y="65.405" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="17.78" y="73.66" size="1.778" layer="96" rot="MR180"/>
+</instance>
+<instance part="IC1" gate="B" x="17.78" y="40.64">
+<attribute name="NAME" x="20.32" y="37.465" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="20.32" y="45.72" size="1.778" layer="96" rot="MR180"/>
+</instance>
+<instance part="IC1" gate="C" x="66.04" y="78.74">
+<attribute name="NAME" x="68.58" y="75.565" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="68.58" y="83.82" size="1.778" layer="96" rot="MR180"/>
+</instance>
+<instance part="IC1" gate="D" x="114.3" y="63.5">
+<attribute name="NAME" x="116.84" y="60.325" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="116.84" y="68.58" size="1.778" layer="96" rot="MR180"/>
+</instance>
 <instance part="MP1" gate="G$2" x="88.9" y="10.16"/>
 <instance part="IC1" gate="P" x="22.86" y="10.16"/>
-<instance part="MIX" gate="G$1" x="86.36" y="66.04" rot="R90"/>
-<instance part="R1" gate="G$1" x="43.18" y="81.28"/>
-<instance part="R2" gate="G$1" x="99.06" y="66.04"/>
-<instance part="R3" gate="G$1" x="-5.08" y="38.1"/>
-<instance part="R4" gate="G$1" x="-12.7" y="66.04"/>
-<instance part="R5" gate="G$1" x="132.08" y="63.5"/>
-<instance part="OUTPUT" gate="G$1" x="157.48" y="63.5"/>
-<instance part="CARRIER" gate="G$1" x="-58.42" y="68.58" rot="R180"/>
-<instance part="MODULATOR" gate="G$1" x="-58.42" y="38.1" rot="R180"/>
-<instance part="CARRIERAC" gate="G$1" x="-25.4" y="66.04" rot="R90"/>
-<instance part="MODAC" gate="G$1" x="-25.4" y="38.1" rot="R90"/>
-<instance part="VRCARIER" gate="G$1" x="-43.18" y="60.96" rot="R90"/>
-<instance part="VRMOD" gate="G$1" x="-40.64" y="30.48" rot="R90"/>
-<instance part="C2" gate="G$1" x="-33.02" y="60.96" rot="R90"/>
-<instance part="C3" gate="G$1" x="-30.48" y="30.48" rot="R90"/>
-<instance part="R6" gate="G$1" x="-30.48" y="53.34" rot="R90"/>
-<instance part="R7" gate="G$1" x="-27.94" y="22.86" rot="R90"/>
+<instance part="MIX" gate="G$1" x="86.36" y="66.04" rot="R90">
+<attribute name="NAME" x="80.391" y="62.23" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="82.55" y="62.23" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R1" gate="G$1" x="43.18" y="81.28">
+<attribute name="NAME" x="43.18" y="82.804" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="43.18" y="79.756" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
+<instance part="R2" gate="G$1" x="99.06" y="66.04">
+<attribute name="NAME" x="99.06" y="67.564" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="99.06" y="64.516" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
+<instance part="R3" gate="G$1" x="-5.08" y="38.1">
+<attribute name="NAME" x="-5.08" y="39.624" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="-5.08" y="36.576" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
+<instance part="R4" gate="G$1" x="-12.7" y="66.04">
+<attribute name="NAME" x="-12.7" y="67.564" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="-12.7" y="64.516" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
+<instance part="R5" gate="G$1" x="132.08" y="63.5">
+<attribute name="NAME" x="132.08" y="65.024" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="132.08" y="61.976" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
+<instance part="OUTPUT" gate="G$1" x="157.48" y="63.5">
+<attribute name="NAME" x="154.94" y="67.564" size="1.778" layer="95"/>
+<attribute name="VALUE" x="154.94" y="57.404" size="1.778" layer="96"/>
+</instance>
+<instance part="CARRIER" gate="G$1" x="-58.42" y="68.58" rot="R180">
+<attribute name="NAME" x="-55.88" y="64.516" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-55.88" y="74.676" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="MODULATOR" gate="G$1" x="-58.42" y="38.1" rot="R180">
+<attribute name="NAME" x="-55.88" y="34.036" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-55.88" y="44.196" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="CARRIERAC" gate="G$1" x="-25.4" y="66.04" rot="R90">
+<attribute name="NAME" x="-22.86" y="71.12" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-22.86" y="73.66" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="MODAC" gate="G$1" x="-25.4" y="38.1" rot="R90">
+<attribute name="NAME" x="-22.86" y="43.18" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-22.86" y="45.72" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="VOLCARIER" gate="G$1" x="-43.18" y="60.96" rot="R90">
+<attribute name="NAME" x="-49.149" y="57.15" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-46.99" y="57.15" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="VOLMOD" gate="G$1" x="-40.64" y="30.48" rot="R90">
+<attribute name="NAME" x="-46.609" y="26.67" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-44.45" y="26.67" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="C2" gate="G$1" x="-33.02" y="60.96" rot="R90">
+<attribute name="NAME" x="-35.941" y="62.484" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="-30.861" y="62.484" size="1.778" layer="96" font="vector" rot="R90"/>
+</instance>
+<instance part="C3" gate="G$1" x="-30.48" y="30.48" rot="R90">
+<attribute name="NAME" x="-33.401" y="32.004" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="-28.321" y="32.004" size="1.778" layer="96" font="vector" rot="R90"/>
+</instance>
+<instance part="R6" gate="G$1" x="-30.48" y="53.34" rot="R90">
+<attribute name="NAME" x="-32.004" y="53.34" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="-28.956" y="53.34" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="R7" gate="G$1" x="-27.94" y="22.86" rot="R90">
+<attribute name="NAME" x="-29.464" y="22.86" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="-26.416" y="22.86" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
 <instance part="X1" gate="G$1" x="-116.84" y="104.14" rot="R180">
 <attribute name="RS-PART" x="-116.84" y="104.14" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="NAME" x="-111.76" y="99.06" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-111.76" y="111.76" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="IC2" gate="A" x="-58.42" y="104.14"/>
-<instance part="R8" gate="G$1" x="-83.82" y="114.3"/>
-<instance part="R9" gate="G$1" x="-83.82" y="96.52"/>
-<instance part="R10" gate="G$1" x="-73.66" y="104.14" rot="R90"/>
-<instance part="R11" gate="G$1" x="-50.8" y="114.3"/>
-<instance part="C5" gate="G$1" x="-22.86" y="104.14" rot="R90"/>
-<instance part="R12" gate="G$1" x="-60.96" y="91.44"/>
-<instance part="R13" gate="G$1" x="-40.64" y="96.52" rot="R90"/>
-<instance part="R14" gate="G$1" x="-7.62" y="104.14"/>
-<instance part="TR1" gate="G$1" x="-48.26" y="91.44"/>
-<instance part="MICVOL" gate="G$1" x="-2.54" y="88.9" rot="R90"/>
+<instance part="IC2" gate="A" x="-58.42" y="104.14">
+<attribute name="NAME" x="-55.88" y="100.965" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="-55.88" y="109.22" size="1.778" layer="96" rot="MR180"/>
+</instance>
+<instance part="R8" gate="G$1" x="-83.82" y="114.3">
+<attribute name="NAME" x="-83.82" y="115.824" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="-83.82" y="112.776" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
+<instance part="R9" gate="G$1" x="-83.82" y="96.52">
+<attribute name="NAME" x="-83.82" y="98.044" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="-83.82" y="94.996" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
+<instance part="R10" gate="G$1" x="-73.66" y="104.14" rot="R90">
+<attribute name="NAME" x="-75.184" y="104.14" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="-72.136" y="104.14" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="R11" gate="G$1" x="-50.8" y="114.3">
+<attribute name="NAME" x="-50.8" y="115.824" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="-50.8" y="112.776" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
+<instance part="C5" gate="G$1" x="-22.86" y="104.14" rot="R90">
+<attribute name="NAME" x="-25.781" y="105.664" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="-20.701" y="105.664" size="1.778" layer="96" font="vector" rot="R90"/>
+</instance>
+<instance part="R12" gate="G$1" x="-60.96" y="91.44">
+<attribute name="NAME" x="-60.96" y="92.964" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="-60.96" y="89.916" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
+<instance part="R13" gate="G$1" x="-40.64" y="96.52" rot="R90">
+<attribute name="NAME" x="-42.164" y="96.52" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="-39.116" y="96.52" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="R14" gate="G$1" x="-7.62" y="104.14">
+<attribute name="NAME" x="-7.62" y="105.664" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="-7.62" y="102.616" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
+<instance part="TR1" gate="G$1" x="-48.26" y="91.44">
+<attribute name="NAME" x="-52.07" y="97.409" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-52.07" y="95.25" size="1.778" layer="96"/>
+</instance>
+<instance part="MICMIX" gate="G$1" x="-2.54" y="88.9" rot="R90">
+<attribute name="NAME" x="-8.509" y="85.09" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-6.35" y="85.09" size="1.778" layer="96" rot="R90"/>
+</instance>
 <instance part="IC2" gate="P" x="15.24" y="124.46"/>
 </instances>
 <busses>
@@ -6309,13 +6410,13 @@ NS Package M08A</description>
 <junction x="-50.8" y="40.64"/>
 </segment>
 <segment>
-<pinref part="VRCARIER" gate="G$1" pin="1"/>
+<pinref part="VOLCARIER" gate="G$1" pin="1"/>
 <wire x1="-43.18" y1="55.88" x2="-43.18" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="-43.18" y1="53.34" x2="-43.18" y2="50.8" width="0.1524" layer="91"/>
 <label x="-43.18" y="50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="VRMOD" gate="G$1" pin="1"/>
+<pinref part="VOLMOD" gate="G$1" pin="1"/>
 <wire x1="-40.64" y1="25.4" x2="-40.64" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="-40.64" y1="22.86" x2="-40.64" y2="20.32" width="0.1524" layer="91"/>
 <label x="-40.64" y="20.32" size="1.778" layer="95"/>
@@ -6354,7 +6455,7 @@ NS Package M08A</description>
 <label x="-35.56" y="88.9" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="MICVOL" gate="G$1" pin="1"/>
+<pinref part="MICMIX" gate="G$1" pin="1"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="-7.62" y1="66.04" x2="-2.54" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="-2.54" y1="66.04" x2="-2.54" y2="83.82" width="0.1524" layer="91"/>
@@ -6464,7 +6565,7 @@ NS Package M08A</description>
 </net>
 <net name="N$16" class="0">
 <segment>
-<pinref part="VRCARIER" gate="G$1" pin="3"/>
+<pinref part="VOLCARIER" gate="G$1" pin="3"/>
 <pinref part="CARRIER" gate="G$1" pin="TIP"/>
 <wire x1="-43.18" y1="66.04" x2="-53.34" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="-43.18" y1="66.04" x2="-43.18" y2="68.58" width="0.1524" layer="91"/>
@@ -6480,19 +6581,19 @@ NS Package M08A</description>
 <wire x1="-40.64" y1="35.56" x2="-40.64" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="MODAC" gate="G$1" pin="S"/>
 <wire x1="-40.64" y1="40.64" x2="-30.48" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="VRMOD" gate="G$1" pin="3"/>
+<pinref part="VOLMOD" gate="G$1" pin="3"/>
 <junction x="-40.64" y="35.56"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
-<pinref part="VRCARIER" gate="G$1" pin="2"/>
+<pinref part="VOLCARIER" gate="G$1" pin="2"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$19" class="0">
 <segment>
-<pinref part="VRMOD" gate="G$1" pin="2"/>
+<pinref part="VOLMOD" gate="G$1" pin="2"/>
 <pinref part="C3" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -6604,13 +6705,13 @@ NS Package M08A</description>
 <wire x1="-2.54" y1="104.14" x2="2.54" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="2.54" y1="104.14" x2="2.54" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="2.54" y1="99.06" x2="-2.54" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="MICVOL" gate="G$1" pin="3"/>
+<pinref part="MICMIX" gate="G$1" pin="3"/>
 <wire x1="-2.54" y1="99.06" x2="-2.54" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$30" class="0">
 <segment>
-<pinref part="MICVOL" gate="G$1" pin="2"/>
+<pinref part="MICMIX" gate="G$1" pin="2"/>
 <wire x1="2.54" y1="88.9" x2="5.08" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="A" pin="+IN"/>
 <wire x1="7.62" y1="66.04" x2="5.08" y2="66.04" width="0.1524" layer="91"/>
@@ -6633,14 +6734,35 @@ NS Package M08A</description>
 <plain>
 </plain>
 <instances>
-<instance part="D1" gate="G$1" x="35.56" y="78.74"/>
-<instance part="D2" gate="G$1" x="35.56" y="63.5" rot="R180"/>
-<instance part="SUPPLY4" gate="+12V" x="58.42" y="88.9"/>
-<instance part="SUPPLY5" gate="G$1" x="58.42" y="53.34"/>
-<instance part="GND8" gate="1" x="58.42" y="66.04"/>
-<instance part="POWER" gate="G$1" x="15.24" y="71.12" rot="R180"/>
-<instance part="C4" gate="G$1" x="48.26" y="78.74"/>
-<instance part="C1" gate="G$1" x="48.26" y="66.04"/>
+<instance part="D1" gate="G$1" x="35.56" y="78.74">
+<attribute name="NAME" x="33.02" y="81.28" size="1.27" layer="95"/>
+<attribute name="VALUE" x="33.02" y="74.93" size="1.27" layer="96"/>
+</instance>
+<instance part="D2" gate="G$1" x="35.56" y="63.5" rot="R180">
+<attribute name="NAME" x="38.1" y="60.96" size="1.27" layer="95" rot="R180"/>
+<attribute name="VALUE" x="38.1" y="67.31" size="1.27" layer="96" rot="R180"/>
+</instance>
+<instance part="SUPPLY4" gate="+12V" x="58.42" y="88.9">
+<attribute name="VALUE" x="55.88" y="92.075" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY5" gate="G$1" x="58.42" y="53.34">
+<attribute name="VALUE" x="55.245" y="48.641" size="1.778" layer="96"/>
+</instance>
+<instance part="GND8" gate="1" x="58.42" y="66.04">
+<attribute name="VALUE" x="55.88" y="63.5" size="1.778" layer="96"/>
+</instance>
+<instance part="POWER" gate="G$1" x="15.24" y="71.12" rot="R180">
+<attribute name="VALUE" x="17.78" y="81.28" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="17.78" y="62.738" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="C4" gate="G$1" x="48.26" y="78.74">
+<attribute name="NAME" x="49.276" y="79.375" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="49.276" y="74.549" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="C1" gate="G$1" x="48.26" y="66.04">
+<attribute name="NAME" x="49.276" y="66.675" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="49.276" y="61.849" size="1.778" layer="96" font="vector"/>
+</instance>
 </instances>
 <busses>
 </busses>
