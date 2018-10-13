@@ -1037,6 +1037,10 @@ design rules under a new name.</description>
 <wire x1="41.4528" y1="62.1792" x2="41.29" y2="62.19" width="0.35" layer="16"/>
 <wire x1="80.01" y1="59.7408" x2="80.16" y2="59.69" width="0.35" layer="16"/>
 <via x="64.2366" y="32.9946" extent="1-16" drill="0.35"/>
+<contactref element="MICVOL" pad="P$1"/>
+<contactref element="R4" pad="P$2"/>
+<wire x1="69.85" y1="8.89" x2="66.04" y2="17.78" width="0" layer="19" extent="1-1"/>
+<wire x1="51.45" y1="29.17" x2="58.42" y2="33.02" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$9">
 <contactref element="D1" pad="A"/>
@@ -1186,20 +1190,6 @@ design rules under a new name.</description>
 <wire x1="38.1" y1="14.0208" x2="43.3578" y2="19.2786" width="0.1524" layer="16"/>
 <wire x1="71.0946" y1="34.29" x2="71.12" y2="34.29" width="0.1524" layer="16"/>
 <wire x1="38.1" y1="14.0208" x2="38.1" y2="13.97" width="0.1524" layer="16"/>
-</signal>
-<signal name="N$13">
-<contactref element="R4" pad="P$1"/>
-<contactref element="CARRIERAC" pad="2"/>
-<wire x1="58.3692" y1="18.9738" x2="58.3692" y2="17.8308" width="0.1524" layer="1"/>
-<wire x1="51.8922" y1="25.4508" x2="58.3692" y2="18.9738" width="0.1524" layer="1"/>
-<wire x1="50.9778" y1="25.4508" x2="51.8922" y2="25.4508" width="0.1524" layer="1"/>
-<wire x1="50.2158" y1="26.2128" x2="50.9778" y2="25.4508" width="0.1524" layer="1"/>
-<wire x1="50.2158" y1="43.2816" x2="50.2158" y2="26.2128" width="0.1524" layer="1"/>
-<wire x1="52.6542" y1="45.72" x2="50.2158" y2="43.2816" width="0.1524" layer="1"/>
-<wire x1="52.6542" y1="57.7596" x2="52.6542" y2="45.72" width="0.1524" layer="1"/>
-<wire x1="54.5592" y1="59.6646" x2="52.6542" y2="57.7596" width="0.1524" layer="1"/>
-<wire x1="58.3692" y1="17.8308" x2="58.42" y2="17.78" width="0.1524" layer="1"/>
-<wire x1="54.5592" y1="59.6646" x2="54.61" y2="59.69" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$14">
 <contactref element="R3" pad="P$1"/>
@@ -1444,16 +1434,19 @@ design rules under a new name.</description>
 <signal name="N$30">
 <contactref element="MICVOL" pad="P$2"/>
 <contactref element="IC1" pad="3"/>
-<contactref element="R4" pad="P$2"/>
 <wire x1="75.5904" y1="26.67" x2="76.2" y2="26.67" width="0.1524" layer="16"/>
 <wire x1="66.7512" y1="17.8308" x2="75.5904" y2="26.67" width="0.1524" layer="16"/>
 <wire x1="66.0654" y1="17.8308" x2="66.7512" y2="17.8308" width="0.1524" layer="16"/>
-<wire x1="66.0654" y1="17.8308" x2="66.04" y2="17.78" width="0.1524" layer="16"/>
 <wire x1="52.8828" y1="26.67" x2="51.5112" y2="26.67" width="0.1524" layer="1"/>
 <wire x1="61.722" y1="17.8308" x2="52.8828" y2="26.67" width="0.1524" layer="1"/>
 <wire x1="65.9892" y1="17.8308" x2="61.722" y2="17.8308" width="0.1524" layer="1"/>
 <wire x1="51.5112" y1="26.67" x2="51.45" y2="26.67" width="0.1524" layer="1"/>
-<wire x1="65.9892" y1="17.8308" x2="66.04" y2="17.78" width="0.1524" layer="1"/>
+<wire x1="65.9892" y1="17.8308" x2="66.0654" y2="17.8308" width="0" layer="19" extent="1-16"/>
+</signal>
+<signal name="N$8">
+<contactref element="CARRIERAC" pad="2"/>
+<contactref element="R4" pad="P$1"/>
+<wire x1="58.42" y1="17.78" x2="54.61" y2="59.69" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

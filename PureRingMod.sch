@@ -6181,7 +6181,7 @@ NS Package M08A</description>
 <instance part="R1" gate="G$1" x="43.18" y="81.28"/>
 <instance part="R2" gate="G$1" x="99.06" y="66.04"/>
 <instance part="R3" gate="G$1" x="-5.08" y="38.1"/>
-<instance part="R4" gate="G$1" x="-5.08" y="66.04"/>
+<instance part="R4" gate="G$1" x="-12.7" y="66.04"/>
 <instance part="R5" gate="G$1" x="132.08" y="63.5"/>
 <instance part="OUTPUT" gate="G$1" x="157.48" y="63.5"/>
 <instance part="CARRIER" gate="G$1" x="-58.42" y="68.58" rot="R180"/>
@@ -6349,6 +6349,12 @@ NS Package M08A</description>
 <wire x1="-35.56" y1="91.44" x2="-35.56" y2="88.9" width="0.1524" layer="91"/>
 <label x="-35.56" y="88.9" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="MICVOL" gate="G$1" pin="1"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="-7.62" y1="66.04" x2="-2.54" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="66.04" x2="-2.54" y2="83.82" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="-12V" class="1">
 <segment>
@@ -6433,14 +6439,6 @@ NS Package M08A</description>
 <pinref part="IC1" gate="D" pin="OUT"/>
 <wire x1="121.92" y1="63.5" x2="127" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="-10.16" y1="66.04" x2="-12.7" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="CARRIERAC" gate="G$1" pin="P"/>
-<wire x1="-20.32" y1="66.04" x2="-12.7" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -6612,11 +6610,16 @@ NS Package M08A</description>
 <wire x1="2.54" y1="88.9" x2="5.08" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="A" pin="+IN"/>
 <wire x1="7.62" y1="66.04" x2="5.08" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="5.08" y1="66.04" x2="2.54" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="2.54" y1="66.04" x2="0" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="88.9" x2="5.08" y2="66.04" width="0.1524" layer="91"/>
 <junction x="5.08" y="66.04"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="CARRIERAC" gate="G$1" pin="P"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="-20.32" y1="66.04" x2="-17.78" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
