@@ -6131,8 +6131,8 @@ NS Package M08A</description>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="POWER" library="SparkFun-Connectors" deviceset="M05X2" device="SHD"/>
 <part name="MIX" library="GMSN" deviceset="9MMPOT" device=""/>
-<part name="R1" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="30K"/>
-<part name="R2" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="38K3"/>
+<part name="R1" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="20K"/>
+<part name="R2" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="27K"/>
 <part name="C4" library="SparkFun-Capacitors" deviceset="10UF-POLAR" device="-RADIAL-2.5MM-25V-20%" value="10uF"/>
 <part name="C1" library="SparkFun-Capacitors" deviceset="10UF-POLAR" device="-RADIAL-2.5MM-25V-20%" value="10uF"/>
 <part name="R3" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="4k7"/>
@@ -6163,6 +6163,8 @@ NS Package M08A</description>
 <part name="R14" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="100"/>
 <part name="TR1" library="INSTRUO" deviceset="TRIMMER_TH3" device="" value="10K"/>
 <part name="MICMIX" library="GMSN" deviceset="9MMPOT" device=""/>
+<part name="R15" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="10K"/>
+<part name="R16" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="27K"/>
 </parts>
 <sheets>
 <sheet>
@@ -6310,6 +6312,14 @@ NS Package M08A</description>
 <attribute name="VALUE" x="-6.35" y="85.09" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="IC2" gate="P" x="15.24" y="124.46"/>
+<instance part="R15" gate="G$1" x="68.58" y="91.44">
+<attribute name="NAME" x="68.58" y="92.964" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="68.58" y="89.916" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
+<instance part="R16" gate="G$1" x="114.3" y="78.74">
+<attribute name="NAME" x="114.3" y="80.264" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="114.3" y="77.216" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -6506,16 +6516,25 @@ NS Package M08A</description>
 <net name="N$4" class="0">
 <segment>
 <pinref part="IC1" gate="C" pin="OUT"/>
-<wire x1="73.66" y1="78.74" x2="86.36" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="78.74" x2="78.74" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="MIX" gate="G$1" pin="3"/>
+<wire x1="78.74" y1="78.74" x2="86.36" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="78.74" x2="86.36" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="78.74" x2="78.74" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="91.44" x2="73.66" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="R15" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="IC1" gate="C" pin="-IN"/>
-<wire x1="48.26" y1="81.28" x2="58.42" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="81.28" x2="53.34" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="81.28" x2="58.42" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="91.44" x2="53.34" y2="81.28" width="0.1524" layer="91"/>
+<junction x="53.34" y="81.28"/>
+<wire x1="53.34" y1="91.44" x2="63.5" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="R15" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -6530,6 +6549,10 @@ NS Package M08A</description>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="IC1" gate="D" pin="-IN"/>
 <wire x1="104.14" y1="66.04" x2="106.68" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="66.04" x2="104.14" y2="78.74" width="0.1524" layer="91"/>
+<junction x="104.14" y="66.04"/>
+<pinref part="R16" gate="G$1" pin="1"/>
+<wire x1="104.14" y1="78.74" x2="109.22" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -6542,8 +6565,13 @@ NS Package M08A</description>
 <net name="N$12" class="0">
 <segment>
 <pinref part="IC1" gate="D" pin="OUT"/>
-<wire x1="121.92" y1="63.5" x2="127" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="63.5" x2="124.46" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="124.46" y1="63.5" x2="127" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="63.5" x2="124.46" y2="78.74" width="0.1524" layer="91"/>
+<junction x="124.46" y="63.5"/>
+<pinref part="R16" gate="G$1" pin="2"/>
+<wire x1="119.38" y1="78.74" x2="124.46" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
