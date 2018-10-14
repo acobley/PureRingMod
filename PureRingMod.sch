@@ -6131,8 +6131,8 @@ NS Package M08A</description>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="POWER" library="SparkFun-Connectors" deviceset="M05X2" device="SHD"/>
 <part name="MIX" library="GMSN" deviceset="9MMPOT" device=""/>
-<part name="R1" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="20K"/>
-<part name="R2" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="27K"/>
+<part name="R1" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="100K"/>
+<part name="R2" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="20K"/>
 <part name="C4" library="SparkFun-Capacitors" deviceset="10UF-POLAR" device="-RADIAL-2.5MM-25V-20%" value="10uF"/>
 <part name="C1" library="SparkFun-Capacitors" deviceset="10UF-POLAR" device="-RADIAL-2.5MM-25V-20%" value="10uF"/>
 <part name="R3" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="4k7"/>
@@ -6163,8 +6163,8 @@ NS Package M08A</description>
 <part name="R14" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="100"/>
 <part name="TR1" library="INSTRUO" deviceset="TRIMMER_TH3" device="" value="10K"/>
 <part name="MICMIX" library="GMSN" deviceset="9MMPOT" device=""/>
-<part name="R15" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="10K"/>
-<part name="R16" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="27K"/>
+<part name="R15" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="20K"/>
+<part name="R16" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="100K"/>
 </parts>
 <sheets>
 <sheet>
