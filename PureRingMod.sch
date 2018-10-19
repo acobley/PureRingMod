@@ -6429,7 +6429,6 @@ NS Package M08A</description>
 <segment>
 <pinref part="IC2" gate="P" pin="V-"/>
 <wire x1="15.24" y1="116.84" x2="15.24" y2="114.3" width="0.1524" layer="91"/>
-<label x="17.78" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+12V" class="1">
