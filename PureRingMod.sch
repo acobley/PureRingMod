@@ -6326,7 +6326,7 @@ NS Package M08A</description>
 <wire x1="-2.54" y1="66.04" x2="-2.54" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="-12V" class="1">
+<net name="-12V" class="2">
 <segment>
 <pinref part="MP1" gate="G$2" pin="V-"/>
 <wire x1="88.9" y1="2.54" x2="88.9" y2="0" width="0.1524" layer="91"/>
@@ -6342,7 +6342,7 @@ NS Package M08A</description>
 <wire x1="15.24" y1="116.84" x2="15.24" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+12V" class="1">
+<net name="+12V" class="2">
 <segment>
 <pinref part="MP1" gate="G$2" pin="V+"/>
 <wire x1="88.9" y1="17.78" x2="88.9" y2="20.32" width="0.1524" layer="91"/>
@@ -6663,7 +6663,7 @@ NS Package M08A</description>
 <junction x="22.86" y="66.04"/>
 </segment>
 </net>
-<net name="+12V" class="1">
+<net name="+12V" class="2">
 <segment>
 <pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="38.1" y1="78.74" x2="43.18" y2="78.74" width="0.1524" layer="91"/>
@@ -6680,7 +6680,7 @@ NS Package M08A</description>
 <pinref part="C4" gate="G$1" pin="+"/>
 </segment>
 </net>
-<net name="-12V" class="1">
+<net name="-12V" class="2">
 <segment>
 <pinref part="D2" gate="G$1" pin="A"/>
 <wire x1="38.1" y1="63.5" x2="43.18" y2="63.5" width="0.1524" layer="91"/>
