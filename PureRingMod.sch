@@ -1586,77 +1586,6 @@ http://www.kemet.com/Lists/ProductCatalog/Attachments/254/KEM_T2005_T491.pdf</de
 <text x="0" y="-1.27" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
 <wire x1="3.91" y1="1" x2="3.91" y2="-1" width="0.127" layer="21"/>
 </package>
-<package name="0402">
-<description>&lt;p&gt;&lt;b&gt;Generic 1005 (0402) package&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
-<wire x1="-0.2704" y1="0.2286" x2="0.2704" y2="0.2286" width="0.1524" layer="51"/>
-<wire x1="0.2704" y1="-0.2286" x2="-0.2704" y2="-0.2286" width="0.1524" layer="51"/>
-<wire x1="-1.2" y1="0.65" x2="1.2" y2="0.65" width="0.0508" layer="39"/>
-<wire x1="1.2" y1="0.65" x2="1.2" y2="-0.65" width="0.0508" layer="39"/>
-<wire x1="1.2" y1="-0.65" x2="-1.2" y2="-0.65" width="0.0508" layer="39"/>
-<wire x1="-1.2" y1="-0.65" x2="-1.2" y2="0.65" width="0.0508" layer="39"/>
-<smd name="1" x="-0.58" y="0" dx="0.85" dy="0.9" layer="1"/>
-<smd name="2" x="0.58" y="0" dx="0.85" dy="0.9" layer="1"/>
-<text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.3048" layer="51"/>
-<rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.3048" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-</package>
-<package name="0603">
-<description>&lt;p&gt;&lt;b&gt;Generic 1608 (0603) package&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
-<wire x1="-1.6" y1="0.7" x2="1.6" y2="0.7" width="0.0508" layer="39"/>
-<wire x1="1.6" y1="0.7" x2="1.6" y2="-0.7" width="0.0508" layer="39"/>
-<wire x1="1.6" y1="-0.7" x2="-1.6" y2="-0.7" width="0.0508" layer="39"/>
-<wire x1="-1.6" y1="-0.7" x2="-1.6" y2="0.7" width="0.0508" layer="39"/>
-<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
-<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
-<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
-<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-</package>
-<package name="CAP-PTH-SMALL-KIT">
-<description>&lt;h3&gt;CAP-PTH-SMALL-KIT&lt;/h3&gt;
-Commonly used for small ceramic capacitors. Like our 0.1uF (http://www.sparkfun.com/products/8375) or 22pF caps (http://www.sparkfun.com/products/8571).&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;Warning:&lt;/b&gt; This is the KIT version of this package. This package has a smaller diameter top stop mask, which doesn't cover the diameter of the pad. This means only the bottom side of the pads' copper will be exposed. You'll only be able to solder to the bottom side.</description>
-<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.254" layer="21"/>
-<wire x1="-2.667" y1="1.27" x2="2.667" y2="1.27" width="0.254" layer="21"/>
-<wire x1="2.667" y1="1.27" x2="2.667" y2="-1.27" width="0.254" layer="21"/>
-<wire x1="2.667" y1="-1.27" x2="-2.667" y2="-1.27" width="0.254" layer="21"/>
-<wire x1="-2.667" y1="-1.27" x2="-2.667" y2="1.27" width="0.254" layer="21"/>
-<pad name="1" x="-1.397" y="0" drill="1.016" diameter="2.032" stop="no"/>
-<pad name="2" x="1.397" y="0" drill="1.016" diameter="2.032" stop="no"/>
-<polygon width="0.127" layer="30">
-<vertex x="-1.4021" y="-0.9475" curve="-90"/>
-<vertex x="-2.357" y="-0.0178" curve="-90.011749"/>
-<vertex x="-1.4046" y="0.9576" curve="-90"/>
-<vertex x="-0.4546" y="-0.0204" curve="-90.024193"/>
-</polygon>
-<polygon width="0.127" layer="29">
-<vertex x="-1.4046" y="-0.4395" curve="-90.012891"/>
-<vertex x="-1.8491" y="-0.0153" curve="-90"/>
-<vertex x="-1.4046" y="0.452" curve="-90"/>
-<vertex x="-0.9627" y="-0.0051" curve="-90.012967"/>
-</polygon>
-<polygon width="0.127" layer="30">
-<vertex x="1.397" y="-0.9475" curve="-90"/>
-<vertex x="0.4421" y="-0.0178" curve="-90.011749"/>
-<vertex x="1.3945" y="0.9576" curve="-90"/>
-<vertex x="2.3445" y="-0.0204" curve="-90.024193"/>
-</polygon>
-<polygon width="0.127" layer="29">
-<vertex x="1.3945" y="-0.4395" curve="-90.012891"/>
-<vertex x="0.95" y="-0.0153" curve="-90"/>
-<vertex x="1.3945" y="0.452" curve="-90"/>
-<vertex x="1.8364" y="-0.0051" curve="-90.012967"/>
-</polygon>
-</package>
 </packages>
 <symbols>
 <symbol name="CAP_POL">
@@ -1670,16 +1599,6 @@ Commonly used for small ceramic capacitors. Like our 0.1uF (http://www.sparkfun.
 <rectangle x1="-1.872" y1="0.287" x2="-1.745" y2="1.176" layer="94"/>
 <pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
-</symbol>
-<symbol name="CAP">
-<wire x1="0" y1="2.54" x2="0" y2="2.032" width="0.1524" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="0.508" width="0.1524" layer="94"/>
-<text x="1.524" y="2.921" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="1.524" y="-2.159" size="1.778" layer="96" font="vector">&gt;VALUE</text>
-<rectangle x1="-2.032" y1="0.508" x2="2.032" y2="1.016" layer="94"/>
-<rectangle x1="-2.032" y1="1.524" x2="2.032" y2="2.032" layer="94"/>
-<pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
-<pin name="2" x="0" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1759,75 +1678,6 @@ Commonly used for small ceramic capacitors. Like our 0.1uF (http://www.sparkfun.
 <technology name="">
 <attribute name="PROD_ID" value="CAP-12984"/>
 <attribute name="VALUE" value="10µF"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="0.1UF" prefix="C">
-<description>&lt;h3&gt;0.1µF ceramic capacitors&lt;/h3&gt;
-&lt;p&gt;A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field.&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="CAP" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-0402-16V-10%" package="0402">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-12416"/>
-<attribute name="VALUE" value="0.1uF"/>
-</technology>
-</technologies>
-</device>
-<device name="-0603-25V-(+80/-20%)" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-00810"/>
-<attribute name="VALUE" value="0.1uF"/>
-</technology>
-</technologies>
-</device>
-<device name="-0603-25V-5%" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-08604"/>
-<attribute name="VALUE" value="0.1uF"/>
-</technology>
-</technologies>
-</device>
-<device name="-KIT-EZ-50V-20%" package="CAP-PTH-SMALL-KIT">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-08370"/>
-<attribute name="VALUE" value="0.1uF"/>
-</technology>
-</technologies>
-</device>
-<device name="-0603-100V-10%" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-08390"/>
-<attribute name="VALUE" value="0.1uF"/>
 </technology>
 </technologies>
 </device>
@@ -6059,10 +5909,8 @@ NS Package M08A</description>
 <part name="R9" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="330"/>
 <part name="R10" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="27K"/>
 <part name="R11" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="1M"/>
-<part name="C5" library="SparkFun-Capacitors" deviceset="0.1UF" device="-KIT-EZ-50V-20%" value="4u7f"/>
 <part name="R12" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="1M"/>
 <part name="R13" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="10K"/>
-<part name="R14" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="100"/>
 <part name="MICMIX" library="GMSN" deviceset="9MMPOT" device=""/>
 <part name="R15" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="20K"/>
 <part name="R16" library="SparkFun-Resistors" deviceset="330OHM" device="-HORIZ-1/10W-5%" value="100K"/>
@@ -6164,10 +6012,6 @@ NS Package M08A</description>
 <attribute name="NAME" x="-50.8" y="115.824" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="-50.8" y="112.776" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="C5" gate="G$1" x="-22.86" y="104.14" rot="R90">
-<attribute name="NAME" x="-25.781" y="105.664" size="1.778" layer="95" font="vector" rot="R90"/>
-<attribute name="VALUE" x="-20.701" y="105.664" size="1.778" layer="96" font="vector" rot="R90"/>
-</instance>
 <instance part="R12" gate="G$1" x="-60.96" y="91.44">
 <attribute name="NAME" x="-60.96" y="92.964" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="-60.96" y="89.916" size="1.778" layer="96" font="vector" align="top-center"/>
@@ -6175,10 +6019,6 @@ NS Package M08A</description>
 <instance part="R13" gate="G$1" x="-40.64" y="96.52" rot="R90">
 <attribute name="NAME" x="-42.164" y="96.52" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="-39.116" y="96.52" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-</instance>
-<instance part="R14" gate="G$1" x="-7.62" y="104.14">
-<attribute name="NAME" x="-7.62" y="105.664" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="-7.62" y="102.616" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 <instance part="MICMIX" gate="G$1" x="-2.54" y="88.9" rot="R90">
 <attribute name="NAME" x="-8.509" y="85.09" size="1.778" layer="95" rot="R90"/>
@@ -6319,12 +6159,6 @@ NS Package M08A</description>
 <pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="-40.64" y1="91.44" x2="-55.88" y2="91.44" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="MICMIX" gate="G$1" pin="1"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="-7.62" y1="66.04" x2="-2.54" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="-2.54" y1="66.04" x2="-2.54" y2="83.82" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="-12V" class="2">
 <segment>
@@ -6340,6 +6174,7 @@ NS Package M08A</description>
 <segment>
 <pinref part="IC2" gate="P" pin="V-"/>
 <wire x1="15.24" y1="116.84" x2="15.24" y2="114.3" width="0.1524" layer="91"/>
+<label x="17.78" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+12V" class="2">
@@ -6377,6 +6212,7 @@ NS Package M08A</description>
 <wire x1="78.74" y1="78.74" x2="78.74" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="91.44" x2="73.66" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="R15" gate="G$1" pin="2"/>
+<junction x="78.74" y="78.74"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -6453,22 +6289,18 @@ NS Package M08A</description>
 </net>
 <net name="N$18" class="0">
 <segment>
-<pinref part="VOLCARIER" gate="G$1" pin="2"/>
-<wire x1="-38.1" y1="60.96" x2="-38.1" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="68.58" x2="-30.48" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="-30.48" y1="68.58" x2="-30.48" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="-30.48" y1="66.04" x2="-17.78" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="66.04" x2="-17.78" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="VOLCARIER" gate="G$1" pin="2"/>
+<wire x1="-38.1" y1="60.96" x2="-38.1" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$19" class="0">
 <segment>
-<pinref part="VOLMOD" gate="G$1" pin="2"/>
-<wire x1="-35.56" y1="30.48" x2="-35.56" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="-27.94" y1="40.64" x2="-35.56" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="-27.94" y1="40.64" x2="-27.94" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="-27.94" y1="38.1" x2="-10.16" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="38.1" x2="-10.16" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="VOLMOD" gate="G$1" pin="2"/>
+<wire x1="-35.56" y1="30.48" x2="-35.56" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$22" class="0">
@@ -6530,28 +6362,12 @@ NS Package M08A</description>
 <pinref part="R11" gate="G$1" pin="2"/>
 <wire x1="-45.72" y1="114.3" x2="-40.64" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="-40.64" y1="114.3" x2="-40.64" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="-40.64" y1="104.14" x2="-27.94" y2="104.14" width="0.1524" layer="91"/>
 <junction x="-40.64" y="104.14"/>
 <pinref part="R13" gate="G$1" pin="2"/>
 <wire x1="-40.64" y1="104.14" x2="-40.64" y2="101.6" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$26" class="0">
-<segment>
-<pinref part="C5" gate="G$1" pin="2"/>
-<pinref part="R14" gate="G$1" pin="1"/>
-<wire x1="-20.32" y1="104.14" x2="-12.7" y2="104.14" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$29" class="0">
-<segment>
-<pinref part="R14" gate="G$1" pin="2"/>
-<wire x1="-2.54" y1="104.14" x2="2.54" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="2.54" y1="104.14" x2="2.54" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="2.54" y1="99.06" x2="-2.54" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="104.14" x2="-2.54" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="MICMIX" gate="G$1" pin="3"/>
-<wire x1="-2.54" y1="99.06" x2="-2.54" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="104.14" x2="-2.54" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$30" class="0">
@@ -6560,9 +6376,15 @@ NS Package M08A</description>
 <wire x1="2.54" y1="88.9" x2="5.08" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="A" pin="+IN"/>
 <wire x1="7.62" y1="66.04" x2="5.08" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="66.04" x2="2.54" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="88.9" x2="5.08" y2="66.04" width="0.1524" layer="91"/>
-<junction x="5.08" y="66.04"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="MICMIX" gate="G$1" pin="1"/>
+<wire x1="-2.54" y1="83.82" x2="-2.54" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="-2.54" y1="66.04" x2="-7.62" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
