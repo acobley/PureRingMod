@@ -5882,8 +5882,8 @@ NS Package M08A</description>
 <parts>
 <part name="MP1" library="ad633-2" deviceset="AD633*" device="N" technology="A"/>
 <part name="IC1" library="GMSN" deviceset="TL074" device="P"/>
-<part name="D1" library="adafruit" deviceset="DIODE" device="DO-1N4148"/>
-<part name="D2" library="adafruit" deviceset="DIODE" device="DO-1N4148"/>
+<part name="D1" library="adafruit" deviceset="DIODE" device="DO-1N4148" value="1n4148"/>
+<part name="D2" library="adafruit" deviceset="DIODE" device="DO-1N4148" value="1N4148"/>
 <part name="SUPPLY4" library="supply2" deviceset="+12V" device=""/>
 <part name="SUPPLY5" library="supply2" deviceset="-12V" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
