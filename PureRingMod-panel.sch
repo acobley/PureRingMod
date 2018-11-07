@@ -3745,6 +3745,95 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
+<library name="GMSN-R2Project">
+<packages>
+<package name="S_JACK_PANEL">
+<circle x="0" y="0" radius="3.162275" width="0.127" layer="21"/>
+<hole x="0" y="0" drill="6.32455"/>
+</package>
+<package name="POT_PANEL">
+<circle x="0" y="0" radius="2.690721875" width="0.127" layer="21"/>
+<hole x="0" y="0" drill="5.6796125"/>
+</package>
+<package name="MOUNTING_HOLE">
+<circle x="0" y="0" radius="2.690721875" width="0.127" layer="21"/>
+<hole x="0" y="0" drill="3.2"/>
+<hole x="0" y="1.27" drill="3.2"/>
+</package>
+<package name="XLR_PANEL">
+<circle x="0" y="0" radius="2.690721875" width="0.127" layer="21"/>
+<hole x="0" y="0" drill="18.9"/>
+</package>
+</packages>
+<symbols>
+<symbol name="S_JACK_PANEL">
+<rectangle x1="2.286" y1="-0.508" x2="7.874" y2="0.508" layer="94" rot="R90"/>
+</symbol>
+<symbol name="POT_PANEL">
+<rectangle x1="2.286" y1="-0.508" x2="7.874" y2="0.508" layer="94" rot="R90"/>
+</symbol>
+<symbol name="MOUNTING_HOLE">
+<rectangle x1="2.286" y1="-0.508" x2="7.874" y2="0.508" layer="94" rot="R90"/>
+</symbol>
+<symbol name="XLR_PANEL">
+<rectangle x1="2.286" y1="-0.508" x2="7.874" y2="0.508" layer="94" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="S_JACK_PANEL">
+<description>PJ302M 3.5 mm jack socket for PANEL</description>
+<gates>
+<gate name="G$1" symbol="S_JACK_PANEL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="S_JACK_PANEL">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="POT_PANEL">
+<description>PJ302M 3.5 mm jack socket for PANEL</description>
+<gates>
+<gate name="G$1" symbol="POT_PANEL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="POT_PANEL">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MOUNTING_HOLE">
+<description>PJ302M 3.5 mm jack socket for PANEL</description>
+<gates>
+<gate name="G$1" symbol="MOUNTING_HOLE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MOUNTING_HOLE">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="XLR_PANEL">
+<description>PJ302M 3.5 mm jack socket for PANEL</description>
+<gates>
+<gate name="G$1" symbol="XLR_PANEL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="XLR_PANEL">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3771,6 +3860,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="D4" library="SparkFun-LED" deviceset="LED-BLUE" device="1206" value="BLUE"/>
 <part name="R4" library="rcl" deviceset="R-US_" device="R0805" value="330"/>
 <part name="D5" library="SparkFun-LED" deviceset="LED-BLUE" device="1206" value="BLUE"/>
+<part name="U$1" library="GMSN-R2Project" deviceset="S_JACK_PANEL" device=""/>
+<part name="U$3" library="GMSN-R2Project" deviceset="S_JACK_PANEL" device=""/>
+<part name="U$6" library="GMSN-R2Project" deviceset="POT_PANEL" device=""/>
+<part name="U$7" library="GMSN-R2Project" deviceset="POT_PANEL" device=""/>
+<part name="U$8" library="GMSN-R2Project" deviceset="POT_PANEL" device=""/>
+<part name="U$9" library="GMSN-R2Project" deviceset="POT_PANEL" device=""/>
+<part name="U$10" library="GMSN-R2Project" deviceset="POT_PANEL" device=""/>
+<part name="U$12" library="GMSN-R2Project" deviceset="MOUNTING_HOLE" device=""/>
+<part name="U$13" library="GMSN-R2Project" deviceset="MOUNTING_HOLE" device=""/>
+<part name="U$14" library="GMSN-R2Project" deviceset="MOUNTING_HOLE" device=""/>
+<part name="U$15" library="GMSN-R2Project" deviceset="MOUNTING_HOLE" device=""/>
+<part name="U$11" library="GMSN-R2Project" deviceset="XLR_PANEL" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3818,6 +3919,24 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="67.691" y="56.388" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="73.025" y="56.388" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
 </instance>
+<instance part="U$1" gate="G$1" x="7.62" y="96.52">
+<attribute name="NAME" x="5.08" y="100.584" size="1.778" layer="95"/>
+<attribute name="VALUE" x="5.08" y="90.424" size="1.778" layer="96"/>
+</instance>
+<instance part="U$3" gate="G$1" x="7.62" y="81.28">
+<attribute name="NAME" x="5.08" y="85.344" size="1.778" layer="95"/>
+<attribute name="VALUE" x="5.08" y="75.184" size="1.778" layer="96"/>
+</instance>
+<instance part="U$6" gate="G$1" x="7.62" y="63.5"/>
+<instance part="U$7" gate="G$1" x="7.62" y="53.34"/>
+<instance part="U$8" gate="G$1" x="7.62" y="45.72"/>
+<instance part="U$9" gate="G$1" x="7.62" y="38.1"/>
+<instance part="U$10" gate="G$1" x="7.62" y="27.94"/>
+<instance part="U$12" gate="G$1" x="88.9" y="91.44"/>
+<instance part="U$13" gate="G$1" x="88.9" y="81.28"/>
+<instance part="U$14" gate="G$1" x="88.9" y="73.66"/>
+<instance part="U$15" gate="G$1" x="88.9" y="60.96"/>
+<instance part="U$11" gate="G$1" x="88.9" y="45.72"/>
 </instances>
 <busses>
 </busses>
